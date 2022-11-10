@@ -1,7 +1,7 @@
 package routers
 
 import (
-	v1 "blog-service/internal/routers/api/v1"
+	"blog-service/internal/routers/api/v1"
 	"github.com/gin-gonic/gin"
 )
 
@@ -12,6 +12,7 @@ func NewRouter() *gin.Engine {
 
 	tag := v1.Tag{}
 	article := v1.Article{}
+
 	apiv1 := r.Group("/api/v1")
 	{
 		apiv1.POST("/tags", tag.Create)
