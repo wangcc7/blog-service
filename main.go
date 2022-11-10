@@ -76,3 +76,5 @@ func setupLogger() error {
 
 	return nil
 }
+
+// add test
